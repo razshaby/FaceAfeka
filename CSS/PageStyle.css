@@ -1,0 +1,75 @@
+/*---> Start <---- CSS*/
+
+/* Header/Logo Title */
+.header {
+
+  background: #696969;
+   border-bottom: 2px solid black;
+  	  float:left;
+	  width: 100%;
+	  padding :10px;
+	  position:fixed;
+      overflow: hidden;
+}
+
+
+
+.Logout {
+    float:left; 
+    width: 33%;
+    font-size: 30px;
+    
+}
+
+.logoImg {
+    float:left; 
+    width: 33%;
+    color:white;
+    font-size: 30px;
+         text-align: center;
+    
+}
+
+
+
+
+
+.Welcome {
+	color:white;
+    float:right; 
+    width: 33%;
+    font-size: 30px;
+    text-align: center;
+
+
+}
+
+
+.timeline {
+	  float:left;
+	  width: 100%;
+	  margin-top: 80px; 
+}
+
+
+.left {
+    float:left; 
+    width: 25%;
+    text-align: left;
+    height: 50%;
+}
+
+
+.middle {
+    float:left; 
+    width: 50%;
+    height: 50%;
+    padding: 10px;
+}
+
+.right {
+	float:right; 
+	width: 25%;
+	text-align: center;
+	height: 50%;
+}

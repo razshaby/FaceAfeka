@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>A Multiplayer Game</title>
+    <style>
+      canvas {
+        width: 480px;
+        height: 270px;
+        border: 5px solid black;
+      }
+    </style>
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script>
+
+      $.urlParam = function(name){
+          var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+          if (results==null) {
+            return null;
+          }
+          return decodeURI(results[1]) || 0;
+      }
+
+
+
+      $(document).ready(function(){
+        $('#txtbox').val($.urlParam('param1'));
+        $('#rivalName').val($.urlParam('param2'));
+        $('#gameCode').val($.urlParam('param3'));
+      });
+
+</script>
+
+  </head>
+    <body onload="startGame()">
+<script src="/static/game.js"></script>
+<br>Your name: <input type="text" name="fname" id="txtbox" readonly>
+<button id="btnready" onclick="ready()">I am ready</button>
+
+<input type="hidden" id="rivalName" >
+<input type="hidden" id="gameCode"  >
+  </body>
+</html>

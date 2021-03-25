@@ -1,0 +1,17 @@
+.UserPanel
+{
+  padding:15px;
+  border: 2px solid white;
+  border-radius: 20px;
+  background-color: #cccccc;
+  width:25%;
+  height: 50%;
+  
+  position:fixed;
+  
+  overflow-y:auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+}
+

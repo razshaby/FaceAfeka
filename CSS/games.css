@@ -1,0 +1,46 @@
+.active_btn:not(#showAllPostsBtn) {
+  background-color: green !important;
+}
+
+.small-profile-img
+{
+	width: 50px; 
+	height: 50px;
+	float: right;
+
+}
+
+
+.playgame
+{
+	width: 50px; 
+	height: 50px;
+	float: left;
+    border-radius: 25px;
+    border: 5px solid white;
+    margin-top: 15px;
+      margin-right: 5px;
+    
+}
+
+.games-container {
+  overflow: auto;
+  border-style: solid;
+}
+
+
+.notInvitedFriendsList,.InvitedFriendsList,.WaitingInvitedFriendsList
+{
+  overflow: auto;
+  border: 2px solid white;
+  background-color: #e6f2ff;
+  border-radius: 15px;
+  padding:10px;
+  box-shadow: 10px 10px 10px grey;
+}
+
+.notInvitedFriendsList:hover,.InvitedFriendsList:hover,.WaitingInvitedFriendsList:hover {
+  border: 2px solid black;
+   background-color: #ffffff;
+  box-shadow: 10px 10px 10px black;
+}
